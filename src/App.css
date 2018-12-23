@@ -1,32 +1,134 @@
-.App {
+body{
+  background: url("./assests/site-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  /* border: solid cyan; */
+}
+.App>h1{
+  /* border:solid; */
+  padding: 20px;
   text-align: center;
+  background: #333366b9;
+  box-shadow: 0 0 10px 10px rgba(0,0, 0, 0.8);
+  margin-bottom: 20px;
+}
+.btn{
+  background-color: #007ACC;
+  color: #e6e6e7;
+  padding:5px 10px;
+  border-radius: 5px;
+  border:none;
+  font-size: 28px;
+  box-shadow: 0px 5px 5px rgba(0,0, 0, 0.2);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  margin: 5px 0px;
+  width: 17%;
+  margin-left: .5%;
+  height: 80%;
+}
+.btn:hover{
+  box-shadow: 0px 10px 15px rgba(0,0, 0, 0.8);
+}
+.form{
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  height: 10%;
+  margin-bottom: 0px;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.form>input{
+  width: 80%;
+  padding:10px;
+  color:#333366;
+  font-size: 24px;
+  margin-left: .5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form>input:placeholder{
+  color:#efefef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-container{
+  width:90%;
+  min-height: 500px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.todo-container>li{
+  padding:10px ;
+  min-width: 100%;
+  background: #333366b9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.flex .items{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.flex>form{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+
+}
+.flex>form>input{
+  padding:10px;
+  width: 80%;
+  border-radius: 5px;
+  background: rgba(255,2555, 255, 0.2);
+  border:none;
+  color:#efefef;
+  font-size:20px;
+  transition: all .3s ease;
+}
+.flex>form>input:focus{
+  background: rgba(255,2555, 255, 0.8);
+  color:#0f0f0f;
+}
+.flex>form>button{
+  width: 15%;
+  border-radius: 5px;
+  border:none;
+  color:#efefef;
+  font-size:18px;
+  background-color: #007ACC;
+  color: #e6e6e7;
+
 }
 
-.App-link {
-  color: #61dafb;
+.todo-text{
+  display: inline;
+  font-size: 21px;
+  padding: 5px;
 }
+.todo-icon{
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.done{
+  background-image: url("./assests/icons/icons8-checkmark-26.png");
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.edit{
+  background-image: url("./assests/icons/icons8-edit-50.png");
+
+}
+.close{
+  background-image: url("./assests/icons/ic_close_48px-512.png");
 }
